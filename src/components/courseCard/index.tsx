@@ -36,7 +36,7 @@ export const CourseCard = ({ course }: { course: ICourseProps }) => {
                 fill="#76F88B"
               />
             </svg>
-            Onsite Class
+            <span style={{ color: "#fff" }}> Onsite Class</span>
           </div>
           <div>
             <svg
@@ -52,7 +52,7 @@ export const CourseCard = ({ course }: { course: ICourseProps }) => {
                 stroke-width="1.5"
               />
             </svg>
-            Live Class
+            <span style={{ color: "#fff" }}>Live Class</span>
           </div>
         </div>
       </div>
