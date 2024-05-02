@@ -1,0 +1,51 @@
+.about 
+    padding-bottom: 50px
+    border-bottom: 2px solid rgba(255, 255, 255, 0.30)
+    &__label
+        text-align: left
+        padding: 10px 25px
+        border-radius: 50px
+        background: #0E102B
+        width: fit-content
+        margin-bottom: 20px
+
+    &__header
+        display: flex
+        justify-content: space-between
+    &__content
+        height: 504px
+        box-sizing: border-box
+        background-image: url('../assets/about-bg.png')
+        background-repeat: no-repeat
+        box-sizing: border-box
+        background-position: bottom center
+        background-size: 100% auto
+        border-radius: 20px
+        overflow: hidden
+        margin-top: 77px
+
+
+
+
+@media (max-width: 991px)
+    .about
+        &__header
+            flex-direction: column
+            gap: 20px
+        &__content
+            margin-top: 60px
+            height: 404px
+@media (max-width: 768px)
+    .about
+        &__content
+            margin-top: 50px
+            height: 304px
+    
+/* Styles for mobile phones
+@media (max-width: 480px)
+    .about
+        &__header
+            flex-direction: column
+        &__content
+            margin-top: 0px
+            height: 250px

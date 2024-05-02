@@ -1,0 +1,107 @@
+.main-header
+    background: linear-gradient(270deg, rgba(185, 234, 205, 0.00) 0%, rgba(185, 234, 205, 0.20) 100%)
+    // background: linear-gradient(270deg, rgba(185, 234, 205, 0.00) 0%, rgba(185, 234, 205, 0.20) 100%)
+    background-image: url('../assets/Background.png')
+    background-repeat: no-repeat
+    background-position: bottom center
+    background-size: cover
+.header
+    // border: 2px solid green
+    height: 100vh
+    max-width: 1085px
+    padding: 0 20px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 220px
+    box-sizing: border-box
+    &__top-title
+        color: #5F45F2
+        text-align: center
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        text-transform: capitalize
+        border-radius: 46px
+        background: #0F1440
+        padding: 18px 30px
+        margin-bottom: 10px
+    &__title
+        color: #FFF
+        text-align: center
+        font-size: 80px
+        font-style: normal
+        font-weight: 700
+        line-height: 90px
+        letter-spacing: -1px
+        text-transform: capitalize
+    &__title:nth-child(3)
+        display: flex
+        justify-items: center
+        flex-wrap: wrap
+        justify-content: center
+        & img
+            width: 100%
+            height: 100%
+            object-fit: cover 
+    &__img-container
+        margin-left: 12px
+        margin-right: 5px
+        width: 80px
+        height: 80px
+    &__text
+        color: #A5A5A5
+        text-align: center
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        text-transform: capitalize
+        max-width: 800px
+        margin-bottom: 30px
+    &__action
+        display: flex
+        align-items: center
+        gap: 20px
+
+
+
+@media (max-width: 1200px)
+//   .title_style
+//     font-size: 30px
+
+@media (max-width: 991px)
+    .header
+        padding-top: 20px
+        &__title
+            font-size: 60px
+            line-height: 70px
+        &__img-container
+            width: 55px
+            height: 55px
+
+@media (max-width: 768px)
+    .header
+        padding-top: 20px
+        &__title
+            font-size: 50px
+            line-height: 70px
+        &__img-container
+            width: 45px
+            height: 45px
+
+/* Styles for mobile phones
+@media (max-width: 480px)
+  .header
+    padding-top: 20px
+    &__title
+        font-size: 38px
+        line-height: 50px
+    &__img-container
+        width: 40px
+        height: 40px
+    &_text
+        font-size: 14px

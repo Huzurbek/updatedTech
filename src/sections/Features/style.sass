@@ -1,0 +1,92 @@
+.feature
+    padding: 100px 0
+    &__card-wrapper
+        display: flex
+        gap: 24px
+        height: 314px
+.margin-b
+    margin-bottom: 24px
+
+.feature-card
+    border-radius: 15px
+    border: 1px solid var(--Main-Gradient, #B776F8)
+    background: #050613
+    flex-basis: 40%
+    background-repeat: no-repeat
+    background-size: auto auto
+    padding: 40px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__title
+        font-size: 36px
+        font-weight: 700
+        margin:0
+        text-transform: capitalize
+    &__text
+        font-size: 16px
+        font-weight: 400
+        color: #A5A5A5
+        max-width: 400px
+.neon
+    color: #5F45F2
+.block1
+    flex-basis: 60%
+    background-image: url('../assets/feature1.png')
+    background-position: bottom right
+    background-size: 250px 200px
+
+.block2
+    background: #ffff
+    background-repeat: no-repeat
+    background-image: url('../assets/feature2-a.png'), url('../assets/feature2-b.png')
+    background-position: bottom left,bottom right
+    
+.block3
+    background: #ffff
+    background-repeat: no-repeat
+    background-image: url('../assets/feature3.png')
+    background-position: bottom center
+    // background-size: 400px 153px    
+        
+
+.block4
+    flex-basis: 60%
+    background-image: url('../assets/feature4.png')
+    background-position: bottom right
+
+
+
+
+
+@media (max-width: 991px)
+    .block1, .block2, .block3, .block4
+        flex-basis: 100%
+@media (max-width: 768px)
+    .feature
+        padding: 70px 0
+        &__card-wrapper
+            flex-direction: column
+            gap: 24px
+            height: auto
+    .block1
+        background-size: 150px 100px
+    .block2
+        background-size: 120px 80px 
+    .block4
+        background-size: 150px 110px 
+    
+/* Styles for mobile phones
+@media (max-width: 480px)
+    .feature-card
+        &__title
+            font-size: 20px
+        &__text 
+            font-size: 14px
+    .block1
+        background-size: 112px 92px
+    .block3
+        background-size: 229px 86px 
+    .block4
+        background-size: 130px 103px 

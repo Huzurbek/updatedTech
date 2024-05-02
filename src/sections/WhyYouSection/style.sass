@@ -1,0 +1,47 @@
+.whyYou-container
+    height: 602px
+    background-repeat: no-repeat
+    background-position: bottom center
+    background-size: cover
+    box-sizing: border-box
+    display: flex
+    padding: 0 20px
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 1200px
+        margin: 0 auto
+        width: 100%
+.whyYou-container-title
+    font-size: 96px
+    font-weight: 600
+    max-width: 714px
+    line-height: 122px
+    
+
+@media (max-width: 991px)
+    .whyYou-container
+        height: 520px
+@media (max-width: 768px)
+    .whyYou-container
+        height: 500px
+        justify-content: center
+        &__content
+            flex-direction: column
+            justify-content: center
+            gap: 24px
+            align-items: flex-start
+            width: fit-content
+    .whyYou-container-title
+        font-size: 60px
+        max-width: 400px
+        line-height: 60px
+/* Styles for mobile phones
+@media (max-width: 480px)
+    .whyYou-container
+        height: 400px
+    .whyYou-container-title
+        font-size: 50px
+        max-width: 350px
+        line-height: 55px

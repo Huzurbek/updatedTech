@@ -1,0 +1,52 @@
+
+.accordion_wrapper 
+  // border-bottom: 1px solid #ECEFF2
+  overflow: hidden
+  margin: 0 auto 15px auto
+  max-width: 1008px
+
+.accordion_wrapper:first-child
+  // border-top: 1px solid #ECEFF2  
+
+.accordion_wrapper:last-child
+  border-bottom: none
+
+.question-container 
+  width: 100%
+  text-align: left
+  padding: 5px 0 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: 600
+  font-size: 18px
+  background: transparent
+  border: none
+  cursor: pointer
+  box-sizing: border-box
+  color: #727272
+
+.question-container.active 
+  color: #FFFF
+  background-image: linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.04),transparent)
+
+.accordion_wrapper .question-container:hover 
+  background-image: linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.04),transparent)
+
+.accordion_wrapper .arrow 
+  font-size: 5rem
+  transition: 0.5s ease-in-out
+  box-sizing: border-box
+
+.arrow.active 
+  rotate: 180deg
+
+.accordion_wrapper .answer-container 
+  padding: 0
+  transition: height 0.7s ease-in-out
+
+.accordion_wrapper .answer-content 
+  padding: 10px 0
+  font-size: 18px
+  font-weight: 400
+  color: #5E646A

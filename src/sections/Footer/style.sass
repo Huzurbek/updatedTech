@@ -1,0 +1,68 @@
+.footer-wrapper
+    max-width: 1240px
+    padding: 200px 20px 85px
+    margin: 0 auto
+.footer
+    display: flex
+    justify-content: space-between
+    gap: 24px
+    margin-bottom: 70px
+    &__text
+        color: #6F7679
+        font-size: 16px
+        font-weight: 400
+        line-height: normal
+        text-transform: capitalize
+    &__column-title
+        font-size: 26px
+        font-weight: 700
+        line-height: 30px
+        padding: 0px
+        margin: 0px
+        margin-bottom: 30px
+    & ul 
+        margin: 0
+        padding: 0
+    & ul li 
+        padding: 0
+        margin-bottom: 15px
+        color: #6F7679
+        font-size: 16px
+        font-weight: 400
+        line-height: 25px
+    & ul li a
+        color: #6F7679
+    &__divider
+        border-top: 2px solid #CDCDCD
+        width: 100%
+        margin: 30px 0
+        // margin-bottom: 15px
+.copyright
+    color: #6F7679
+    font-size: 16px
+    font-weight: 400
+    line-height: 25px
+    letter-spacing: 0.16px
+    text-align: center
+
+@media (max-width: 991px)
+    .footer-wrapper
+        padding: 150px 20px 65px
+    .footer
+        flex-direction: column
+
+@media (max-width: 768px)
+    .footer-wrapper
+        padding: 120px 20px 40px
+    .footer
+        margin-bottom: 40px
+        &__divider
+            margin: 20px 0
+
+/* Styles for mobile phones
+@media (max-width: 480px)
+    .footer-wrapper
+        padding: 100px 20px 30px
+    .footer
+        margin-bottom: 30px
+   

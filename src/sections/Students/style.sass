@@ -1,0 +1,126 @@
+.student
+    padding: 200px 0 150px 0
+    &__companylist
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 50px 0 200px 0
+        gap: 50px
+        overflow: auto
+        padding-bottom: 20px
+        // overflow-y: hidden
+
+    &__content
+        display: flex
+        gap: 24px
+    &__company-log
+        position: relative
+    &__company-log::after
+        content: url('data:image/svg+xml,<svg width="3" height="22" viewBox="0 0 3 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.94287 1.00488V21.0049" stroke="white" stroke-opacity="0.1" stroke-width="2" stroke-linecap="round"/></svg>')
+        position: absolute
+        top: 20%
+        right: -25px
+        display: flex
+        align-items: center
+
+.report-card
+    border-radius: 10px
+    border: 0.5px solid rgba(183, 118, 248, 0.50)
+    background: rgba(10, 12, 39, 0.55)
+    backdrop-filter: blur(5px)
+    padding: 40px 25px
+    flex-basis: 20%
+    &:first-child
+        flex-basis: 40%
+        padding: 40px  
+    &__avatar
+        width: 50px
+        height: 50px
+        position: absolute
+        right: -80px
+        & img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__avatar:nth-child(2)
+        right: -110px
+        z-index: 2
+    &__avatar:nth-child(3)
+        right: -140px
+        z-index: 3
+    &__header
+        color: #fff
+        font-size: 64px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: -1px
+        text-transform: capitalize
+    &__title
+        color: #5F45F2
+        font-size: 40px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: -1px
+        text-transform: capitalize
+        margin: 0
+    &__text
+        color: #A5A5A5
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        text-transform: capitalize
+
+    
+@media (max-width: 991px)
+    .student
+        padding: 150px 0 120px 0
+        &__companylist
+            margin: 50px 0 150px 0
+    .report-card
+        flex-basis: 100%
+        padding: 25px
+        &:first-child
+            flex-basis: 100%
+            padding: 25px
+        &__avatar
+            right: -60px
+        &__avatar:nth-child(2)
+            right: -90px
+        &__avatar:nth-child(3)
+            right: -120px
+        &__header
+            font-size: 50px    
+@media (max-width: 768px)
+    .student
+        padding: 120px 0
+        &__companylist
+             margin: 50px 0 120px 0
+        &__content
+            flex-direction: column
+
+/* Styles for mobile phones
+@media (max-width: 480px)
+    .student
+        padding: 120px 0
+        &__companylist
+             margin: 50px 0 120px 0
+    .report-card
+        padding: 30px
+        &__avatar
+            width: 30px
+            height: 30px
+            right: -50px
+        &__avatar:nth-child(2)
+            right: -70px
+        &__avatar:nth-child(3)
+            right: -90px
+        &__header
+            font-size: 40px
+        &__title
+            font-size: 32px
+        &__text
+            font-size: 14px
+

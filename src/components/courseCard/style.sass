@@ -1,0 +1,54 @@
+.course-card
+    border-radius: 10px
+    border: 0.5px solid rgba(255, 255, 255, 0.50)
+    background: #0A0C27
+    box-sizing: border-box
+    overflow: hidden
+    cursor: pointer
+    &:hover
+        border: 0.5px solid #B776F8
+    &__header
+        background-repeat: no-repeat
+        height: 240px
+        box-sizing: border-box
+        background-position: center center
+        background-size: cover
+    &__content
+        padding: 25px
+    
+
+.course-content
+    &__title
+        font-size: 24px
+        font-weight: 700
+        margin: 0
+    &__text
+        font-size: 16px
+        font-weight: 400
+        color: #A9A9A9
+    &__footer
+        display: flex
+        gap: 25px
+        font-size: 16px
+        font-weight: 500
+        div
+            display: flex
+            align-items: center
+            gap: 8px
+
+@media (max-width: 991px)
+
+@media (max-width: 768px)
+    .course-card
+        &__content
+            padding: 20px
+    .course-content
+        &__title
+            font-size: 20px
+        &__text
+            font-size: 14px
+/* Styles for mobile phones
+@media (max-width: 480px)
+    .course-card
+        &__content
+            padding: 18px

@@ -1,0 +1,29 @@
+.course
+    padding: 150px 0
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr) 
+        grid-gap: 24px 
+        margin-top: 70px
+        
+
+
+@media (max-width: 991px)
+    .course
+        padding: 130px 0
+        &__wrapper
+            grid-template-columns: repeat(2, 1fr)  
+@media (max-width: 768px)
+    .course
+        padding: 120px 0
+        &__wrapper
+            max-width: 90%
+            margin: 40px auto 0 auto
+            grid-template-columns: repeat(1, 1fr) 
+            grid-gap: 30px  
+/* Styles for mobile phones
+@media (max-width: 480px)
+    .course
+        &__wrapper
+            grid-template-columns: repeat(1, 1fr) 
+            grid-gap: 30px  

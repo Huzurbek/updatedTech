@@ -1,0 +1,35 @@
+.navbar
+  max-width: 1240px,
+  padding: 0 20px
+  margin: 0 auto
+  // border: 2px solid green
+  &__inner
+    min-height: 120px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.logo
+  // margin-bottom: 35px
+
+.menu
+  &__list 
+    display: flex
+    align-items: center
+    gap: 0 41px
+    padding: 0
+    margin: 0
+  &__item
+    text-align: center
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    position: relative
+    &:not(:last-child)::after
+      content: url('data:image/svg+xml,<svg width="3" height="14" viewBox="0 0 3 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.49194 1.5V12.5" stroke="white" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round"/></svg>')
+      position: absolute
+      top: 10%
+      right: -25px
+      display: flex
+      align-items: center

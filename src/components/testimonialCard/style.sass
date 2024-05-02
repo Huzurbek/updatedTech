@@ -1,0 +1,66 @@
+.testimonial
+    flex-basis: 100%
+    padding: 45px 30px
+    box-sizing: border-box
+    border-radius: 10px
+    background: linear-gradient(214deg, rgba(183, 118, 248, 0.01) 0%, rgba(0, 0, 0, 0.01) 99.97%), linear-gradient(326deg, rgba(0, 38, 112, 0.08) 0.03%, rgba(183, 118, 248, 0.08) 100%)
+    border: 1px solid var(--Main-Gradient, #B776F8)
+    min-height: 450px
+    display: flex
+    flex-direction: column
+    &__componay-logo
+        width: 115px
+        height: 34px
+        overflow: hidden
+        margin-bottom: 30px    
+        & img
+            width: 100%
+            height: 100%
+            object-fit: contain 
+    &__comment
+        font-size: 16px
+        font-weight: 400
+        text-align: justify
+        margin-bottom: 35px
+        flex: 1
+    &__member
+        display: flex
+        gap: 10px
+
+.avatar
+    width: 58px
+    height: 58px
+    border-radius: 50%
+    overflow: hidden    
+    & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.member
+    &__name
+        font-size: 20px
+        font-weight: 700
+        text-transform: capitalize
+    &__position
+        font-size: 16px
+        font-weight: 500
+        color: #A5A5A5
+    
+    /* Styles for Smaller devices
+@media (max-width: 1200px)
+  .title_style
+    font-size: 30px
+
+@media (max-width: 991px)
+  .title_style
+    font-size: 28px
+
+@media (max-width: 768px)
+  .title_style
+    font-size: 26px
+
+/* Styles for mobile phones
+@media (max-width: 480px)
+  .title_style
+    font-size: 20px
