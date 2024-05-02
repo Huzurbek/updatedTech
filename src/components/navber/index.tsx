@@ -13,6 +13,7 @@ const Navbar = () => {
         left: 0,
         right: 0,
         backdropFilter: "blur(30px)",
+        WebkitBackdropFilter: "blur(30px)",
         zIndex: 500,
       }}
     >
