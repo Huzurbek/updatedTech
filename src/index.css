@@ -58,8 +58,13 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-@media (prefers-color-scheme: light) {
+@media (max-width: 480px) {
+  button {
+    padding: 14px 30px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+  }
+}
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -70,7 +75,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 @keyframes slideInOut {
   0% {
     opacity: 0;
